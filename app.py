@@ -1,11 +1,6 @@
 import requests, os, uuid, json
-from dotenv import load_dotenv
-load_dotenv()
-
-
 
 from flask import Flask, redirect, url_for, request, render_template, session
-
 
 app = Flask(__name__)
 
@@ -57,4 +52,3 @@ def index_post():
         original_text=original_text,
         target_language=target_language
     )
-
