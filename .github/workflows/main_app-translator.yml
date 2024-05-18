@@ -43,8 +43,6 @@ jobs:
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-    permissions:  # Update permission name if needed
-      <correct_permission_name>: write
 
     steps:
       - name: Download artifact from build job
